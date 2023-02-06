@@ -2,57 +2,16 @@
 Image Classification:
 CIFAR-10 dataset contains of 60,000 32×32 colour images, each containing one of ten object classes, with 6000 images per class. It consists of 50,000 32×32 color training images labelled across ten categories and 10,000 test images.
 
+
 Output of summary:
-            Conv2d-1           [-1, 16, 30, 30]             432
-              ReLU-2           [-1, 16, 30, 30]               0
-       BatchNorm2d-3           [-1, 16, 30, 30]              32
-           Dropout-4           [-1, 16, 30, 30]               0
-            Conv2d-5           [-1, 16, 26, 26]           2,304
-            Conv2d-6           [-1, 32, 26, 26]             512
-depthwise_separable_conv-7           [-1, 32, 26, 26]               0
-              ReLU-8           [-1, 32, 26, 26]               0
-       BatchNorm2d-9           [-1, 32, 26, 26]              64
-          Dropout-10           [-1, 32, 26, 26]               0
-           Conv2d-11           [-1, 32, 22, 22]           9,216
-           Conv2d-12           [-1, 32, 22, 22]           1,024
-depthwise_separable_conv-13           [-1, 32, 22, 22]               0
-             ReLU-14           [-1, 32, 22, 22]               0
-      BatchNorm2d-15           [-1, 32, 22, 22]              64
-          Dropout-16           [-1, 32, 22, 22]               0
-           Conv2d-17           [-1, 32, 18, 18]           9,216
-           Conv2d-18           [-1, 64, 18, 18]           2,048
-depthwise_separable_conv-19           [-1, 64, 18, 18]               0
-             ReLU-20           [-1, 64, 18, 18]               0
-      BatchNorm2d-21           [-1, 64, 18, 18]             128
-          Dropout-22           [-1, 64, 18, 18]               0
-           Conv2d-23             [-1, 64, 7, 7]          36,864
-           Conv2d-24             [-1, 64, 7, 7]           4,096
-depthwise_separable_conv-25             [-1, 64, 7, 7]               0
-             ReLU-26             [-1, 64, 7, 7]               0
-      BatchNorm2d-27             [-1, 64, 7, 7]             128
-          Dropout-28             [-1, 64, 7, 7]               0
-           Conv2d-29             [-1, 64, 7, 7]          36,864
-           Conv2d-30             [-1, 64, 7, 7]           4,096
-depthwise_separable_conv-31             [-1, 64, 7, 7]               0
-             ReLU-32             [-1, 64, 7, 7]               0
-      BatchNorm2d-33             [-1, 64, 7, 7]             128
-          Dropout-34             [-1, 64, 7, 7]               0
-           Conv2d-35             [-1, 64, 7, 7]          36,864
-           Conv2d-36             [-1, 64, 7, 7]           4,096
-depthwise_separable_conv-37             [-1, 64, 7, 7]               0
-             ReLU-38             [-1, 64, 7, 7]               0
-      BatchNorm2d-39             [-1, 64, 7, 7]             128
-          Dropout-40             [-1, 64, 7, 7]               0
-           Conv2d-41             [-1, 64, 7, 7]          36,864
-             ReLU-42             [-1, 64, 7, 7]               0
-      BatchNorm2d-43             [-1, 64, 7, 7]             128
-          Dropout-44             [-1, 64, 7, 7]               0
-        AvgPool2d-45             [-1, 64, 1, 1]               0
-           Conv2d-46             [-1, 10, 1, 1]             640
-================================================================
 Total params: 185,936
 Trainable params: 185,936
-Non-trainable params: 0
+
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 3.45
+Params size (MB): 0.71
+Estimated Total Size (MB): 4.17
 
 Here we used Atrous convolution and depthwise seperable convolution.
 Atrous convolution helps in increasing the field of view. Same number of parameters used.
