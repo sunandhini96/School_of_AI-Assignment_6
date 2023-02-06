@@ -2,9 +2,7 @@
 Image Classification:
 CIFAR-10 dataset contains of 60,000 32×32 colour images, each containing one of ten object classes, with 6000 images per class. It consists of 50,000 32×32 color training images labelled across ten categories and 10,000 test images.
 
-
-Output of Summary:
-================================================================
+Output of summary:
             Conv2d-1           [-1, 16, 30, 30]             432
               ReLU-2           [-1, 16, 30, 30]               0
        BatchNorm2d-3           [-1, 16, 30, 30]              32
