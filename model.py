@@ -128,7 +128,7 @@ class Net(nn.Module):
         return F.log_softmax(x, dim=-1)
 class Net2(nn.Module):
     def __init__(self):
-        super(Net, self).__init__()
+        super(Net2, self).__init__()
         # Input Block
         self.convblock1 = nn.Sequential(
             nn.Conv2d(in_channels=3, out_channels=16, kernel_size=(3, 3), padding=0, bias=False),
