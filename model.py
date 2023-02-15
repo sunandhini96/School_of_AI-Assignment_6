@@ -161,11 +161,11 @@ class Net2(nn.Module):
       
         # CONVOLUTION BLOCK 3
         self.convblock4 = nn.Sequential(
-            nn.Conv2d(in_channels=64, out_channels=128, kernel_size=(3, 3),dilation=2, padding="same", bias=False),
+            nn.Conv2d(in_channels=64, out_channels=64, kernel_size=(3, 3),dilation=2, padding="same", bias=False),
             nn.ReLU(),            
-            nn.BatchNorm2d(128),
+            nn.BatchNorm2d(64),
             nn.Dropout(0.05), # output size = 9 , RF = 37
-            nn.Conv2d(in_channels=128, out_channels=128, kernel_size=(3, 3),dilation=2, padding="same", bias=False),
+            nn.Conv2d(in_channels=64, out_channels=128, kernel_size=(3, 3),dilation=2, padding="same", bias=False),
             nn.ReLU(),            
             nn.BatchNorm2d(128),
             nn.Dropout(0.05), # output size = 9 , RF = 45
