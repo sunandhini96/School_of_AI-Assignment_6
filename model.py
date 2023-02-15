@@ -161,13 +161,13 @@ class Net2(nn.Module):
       
         # CONVOLUTION BLOCK 3
         self.convblock4 = nn.Sequential(
-            nn.Conv2d(in_channels=64, out_channels=64, kernel_size=(3, 3),dilation=2, padding="same", bias=False),
+            nn.Conv2d(in_channels=64, out_channels=128, kernel_size=(3, 3),dilation=2, padding="same", bias=False),
             nn.ReLU(),            
-            nn.BatchNorm2d(64),
+            nn.BatchNorm2d(128),
             nn.Dropout(0.05), # output size = 9 , RF = 37
-            nn.Conv2d(in_channels=64, out_channels=64, kernel_size=(3, 3),dilation=2, padding="same", bias=False),
+            nn.Conv2d(in_channels=128, out_channels=128, kernel_size=(3, 3),dilation=2, padding="same", bias=False),
             nn.ReLU(),            
-            nn.BatchNorm2d(64),
+            nn.BatchNorm2d(128),
             nn.Dropout(0.05), # output size = 9 , RF = 45
         ) 
         # self.convblock5 = nn.Sequential(
@@ -195,7 +195,7 @@ class Net2(nn.Module):
         ) # output_size = 1
 
         self.convblock8 = nn.Sequential(
-            nn.Conv2d(in_channels=64, out_channels=10, kernel_size=(1, 1), padding=0, bias=False),
+            nn.Conv2d(in_channels=128, out_channels=10, kernel_size=(1, 1), padding=0, bias=False),
             # nn.BatchNorm2d(10),
             # nn.ReLU(),
             # nn.Dropout(dropout_value)
